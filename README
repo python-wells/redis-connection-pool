@@ -1,0 +1,27 @@
+* COMMENT -*- mode: org -*-
+#+Date: 2024-08-08
+Time-stamp: <2024-08-08>
+
+* how to use redis connection pool.
+see code in
+./redisdemo/db.py
+./redisdemo/test_db.py
+
+* to run tests
+
+- A debian based OS is expected to auto bootstrap and run the tests.
+
+  #+begin_src sh
+    make check
+  #+end_src
+
+  - If not using debian or a derivation, check dependencies in
+    requirements.txt and requirements-dev.txt, then run tests via pytest
+
+    #+begin_src sh
+      pip install -r requirements-dev.txt -r requirements.txt
+      pytest redisdemo
+    #+end_src
+
+* license
+MIT license
